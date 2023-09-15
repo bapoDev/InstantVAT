@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Instant VAT",
+    "version": "0.0.1",
+    "description": "Change the price of the products to after VAT prices.",
+    "icons": {
+        "16": "images/icon-16.png",
+        "48": "images/icon-48.png",
+        "128": "images/icon-128.png"
+    },
+    "content_scripts": [
+        {
+            "js": ["scripts/script.js"],
+            "matches": [
+                "https://www.instant-gaming.com/*"
+            ]
+        }
+    ],
+    "action": {
+        "default_popup": "main.html"
+    }
+}
